@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<title>About</title>
+ <head>
+   <head>
+<style>
+div.container {
+    width: 100%;
+    border: 0px solid white;
+}
+header, footer {
+    padding: 1em;
+    color: DimGray;
+    background-color: #D1FFEB;
+    clear: left;
+    text-align: center;
+}
+nav {
+    float: left;
+    max-width: 160px;
+    margin: 0;
+    padding: 1em;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+   
+nav ul a {
+    text-decoration: none;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<header>
+   <div align="left">
+   <h1><style>
+.dropbtn {
+    background-color: #D1FFEB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #B9D6C9;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 16px
+}
+.dropdown a:hover {background-color: #f1f1f1}
+.show {display:block;}
+</style>
+</head>
+<body>
+
+<div class="dropdown">
+<button onclick="myFunction()" class="dropbtn"> <img src="menu-bars.png" alt="Menu" style="width:15px;height:25px;"> </button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="">Home</a>
+    <a href="">Messages</a>
+  </div>
+</div>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script> <div align="center">Logo</h1>
+</header>
+  
